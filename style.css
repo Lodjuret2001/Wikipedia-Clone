@@ -1,0 +1,627 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0080ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 0px;
+}
+
+footer {
+    font-size: 13px;
+    margin: 0px 50px;
+    margin-bottom: 90px;
+}
+
+/*---General CSS---*/
+
+/*---WHITE BACKGROUND*/
+
+.white-background-container {
+    display: flex;
+    justify-content: center;
+}
+
+.white-background {
+    width: 1600px;
+    background-color: white;
+}
+
+/*---NAVBAR CSS*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-bar-account-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/*---HAMBURGER MENU*/
+
+.wikipedia-hamburger-menu {
+    display: flex;
+    align-items: center;
+    margin: 10px 40px 10px 50px;
+}
+
+.wikipedia-hamburger-menu img {
+    height: 50px;
+    padding-right: 14px;
+}
+
+.wikipedia-hamburger-menu img:first-child {
+    height: 20px;
+}
+
+.wikipedia-hamburger-menu-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wikipedia-hamburger-menu-text img {
+    height: 20px;
+}
+
+.wikipedia-hamburger-menu-text img:nth-child(2) {
+    height: 14px;
+    margin-top: 3px;
+}
+
+/*---END HAMBURGER MENU---*/
+
+/*--- START SEACRHBAR---*/
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 0px;
+    max-width: 450px;
+    flex: 1;
+}
+
+.search-bar {
+    padding: 7px 0px 7px 35px;
+    border: 1px solid gray;
+    font-size: 15px;
+    width: 0px;
+    flex: 1;
+}
+
+.search-bar-img {
+    height: 20px;
+    position: absolute;
+    left: 5px;
+}
+
+.search-bar-container button {
+    margin-left: -1px;
+    padding: 7px;
+    font-weight: 700;
+    border: 1px solid gray;
+    font-size: 15px;
+}
+
+/*---END SEARCH BAR---*/
+/*---START ACCOUNT MENU---*/
+
+.account-menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 8px 50px;
+}
+
+.account-menu-container a {
+    font-size: 14px;
+
+}
+
+.account-menu-container img {
+    height: 40px;
+}
+
+/*---END ACCOUNT MENU---*/
+
+/*---START CONTENTS MENU---*/
+
+.content-navigator {
+    width: 200px;
+    margin: 0px 50px;
+    margin-top: 80px;
+    font-size: 15px;
+    position: sticky;
+    top: 20px;
+}
+
+.content-navigator-select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.content-navigator-select p {
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.content-navigator-position {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.content-navigator-position a:first-child {
+    color: black;
+    font-weight: 700;
+}
+
+/*--- MAIN GRID CSS---*/
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 290px minmax(0px, 960px) 1fr;
+    column-gap: 40px;
+    margin-bottom: 50px;
+}
+
+.mid-grid-container {
+    background-color: rgb(255, 255, 255);
+
+}
+
+/*--- UPINGTOPIA-TOPMENU CSS---*/
+
+.upingtonia-topmenu-container {
+    width: 100%;
+    padding-top: 0px;
+}
+
+.languages-box+hr {
+    margin-top: -17px;
+}
+
+.languages-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.languages-box h1 {
+    font-weight: 300;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+}
+
+.languages-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2px 0px;
+}
+
+.languages-selector:hover {
+    background-color: rgba(0, 0, 0, 0.15)
+}
+
+.languages-selector img:first-child {
+    height: 22px;
+}
+
+/*---VIEW-READ MENU*/
+
+.view-read-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 0px;
+}
+
+.article-talk a:first-child {
+    margin-right: 10px;
+}
+
+.read-edit-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    align-items: center;
+
+}
+
+.read-edit-menu button {
+    background-color: transparent;
+    border: 0;
+    margin-right: -6px;
+}
+
+.read-edit-menu button:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.view-read-menu a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
+/*---WIKIPEDIA COORDINATES---*/
+
+.wikimedia-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    margin-top: -2px;
+}
+
+.wikipedia-coordinates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    font-size: 12px;
+}
+
+/*---upingtonia-text-info---*/
+
+.upingtonia-text-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    width: 100%;
+}
+
+.upingtonia-grid-left {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.edit-text {
+    display: flex;
+    align-items: center;
+
+}
+
+.edit-text h2 {
+    font-weight: 300;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    margin-right: 16px;
+}
+
+
+.edit-text+hr {
+    margin-top: -20px;
+}
+
+.edit-text-notes {
+    margin-top: -12px;
+}
+
+/*---NOTES-LIST---*/
+
+.notes-list {
+    font-size: 0.8rem;
+}
+
+.notes-list span {
+    font-style: italic;
+}
+
+/*---ABOUT-COUNTRY---*/
+
+.about-country-container {
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.about-country-container p,
+.about-country-container a,
+.about-country-container img {
+    margin: 5px;
+}
+
+.about-country-title,
+.about-country-year,
+.about-country-flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.about-country-title p:first-child {
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.about-country-title p:last-child {
+    font-style: italic;
+    font-size: 13px;
+
+}
+
+.about-country-year p,
+.about-country-flag p {
+    font-size: 13px;
+}
+
+.about-country-status,
+.about-country-capital,
+.about-country-languages,
+.about-country-religon,
+.about-country-president-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid black;
+}
+
+.about-country-government {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.about-country-status p,
+.about-country-capital p,
+.about-country-languages p,
+.about-country-religon p,
+.about-country-government p,
+.about-country-president-year ul li,
+.history-title {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.about-country-status a,
+.about-country-capital a,
+.about-country-religon a,
+.about-country-government a,
+.president-link {
+    font-size: 13px;
+    width: 100px;
+}
+
+.about-country-languages div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 110px;
+    margin: 0px;
+    font-size: 13px;
+}
+
+.about-country-president-year ul li {
+    margin-left: -20px;
+    margin-top: -10px;
+    font-weight: 300;
+}
+
+.about-country-president-year div {
+    font-size: 13px;
+    width: 110px;
+}
+
+.history-title {
+    padding-bottom: 10px;
+}
+
+.history-list {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    margin-top: -20px;
+
+}
+
+.history-list ul {
+    margin-left: -20px;
+    width: 165px;
+}
+
+.history-list img {
+    margin-bottom: -2px;
+}
+
+.history-list p {
+    width: 140px;
+}
+
+.about-country-currency {
+    border-top: 1px solid black;
+}
+
+.preceded-succeeded {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.preceded-succeeded p {
+    width: 100px;
+}
+
+
+.tribe-decendants {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.tribe-decendants div {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tribe-decendants div:first-child {
+    margin-left: 30px;
+}
+
+.tribe-decendants div:last-child {
+    margin-right: 30px;
+}
+
+.tribe-decendants img {
+    margin: 0px;
+    margin-right: -5px;
+}
+
+.about-country-part {
+    border-bottom: none;
+}
+
+.lijdensrust-map-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.lijdensrust-map {
+    width: 70%;
+    padding: 4px;
+    border: 1px solid black;
+    background-color: #f8f9fa;
+}
+
+.lijdensrust-map img {
+    width: 100%;
+}
+
+.lijdensrust-map div:first-child {
+    display: flex;
+    align-items: center;
+
+}
+
+.lijdensrust-map div div {
+    flex: 1;
+}
+
+.lijdensrust-map div {
+    width: 200px;
+    margin-top: -10px;
+}
+
+.lijdensrust-map p {
+    font-size: 13px;
+}
+
+/*---END-ABOUT-COUNTRYS*/
+
+.related-countrys-container {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.related-countrys-container-second,
+.related-countrys-container-third {
+    border-top: none;
+}
+
+.related-countrys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 213, 255);
+    height: 23px;
+}
+
+.vte,
+.show-info {
+    font-size: 11px;
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+.other-info-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.related-countrys div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories-list {
+    width: cover;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+.categories-list a {
+    padding: 4px;
+    font-size: 15px;
+}
+
+/*---FOOTER CSS---*/
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+
+.footer-menu-links a {
+    margin-right: 20px;
+}
+
+.footer-menu-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
