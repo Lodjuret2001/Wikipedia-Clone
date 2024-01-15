@@ -1,0 +1,122 @@
+.article {
+    width: 100%;
+    padding-top: 0px;
+
+    &__languages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+
+        &--selector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 140px;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 2px 0px;
+
+            img:first-child {
+                height: 22px;
+            }
+        }
+
+        &--selector:hover {
+            background-color: rgba(0, 0, 0, 0.15)
+        }
+
+        h1 {
+            font-weight: 300;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+        }
+
+        +hr {
+            margin-top: -17px;
+        }
+    }
+
+    &__editbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+        padding: 7px 0px;
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+        }
+
+        &--left {
+            a:first-child {
+                margin-right: 10px;
+            }
+        }
+
+        &--right {
+            display: flex;
+            justify-content: space-between;
+            width: 230px;
+            align-items: center;
+
+            button {
+                background-color: transparent;
+                border: 0;
+                margin-right: -6px;
+            }
+
+            button:hover {
+                background-color: rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    &__coordinates {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+        margin-top: -2px;
+
+        &--link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 170px;
+            font-size: 12px;
+        }
+    }
+
+
+    &__edit-text {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-weight: 300;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+            margin-right: 16px;
+        }
+
+        +hr {
+            margin-top: -20px;
+        }
+
+        &--notes {
+            margin-top: -12px;
+        }
+    }
+
+    &__notes {
+        font-size: 0.8rem;
+
+        span {
+            font-style: italic;
+        }
+    }
+}

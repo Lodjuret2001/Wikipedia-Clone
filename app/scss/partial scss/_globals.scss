@@ -1,0 +1,40 @@
+@forward 'colors';
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(var(--body-background));
+    color: black;
+    margin: 0;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(var(--linkcolor));
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 290px minmax(0px, 960px) 1fr;
+    column-gap: 40px;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin: 0px 50px;
+    margin-bottom: 90px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}

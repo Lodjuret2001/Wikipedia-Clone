@@ -1,0 +1,16 @@
+@forward '../colors';
+
+.main__grid-mid {
+    background-color: rgb(var(--grid-background));
+}
+
+.article__grid {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    width: 100%;
+
+    &--left {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+}

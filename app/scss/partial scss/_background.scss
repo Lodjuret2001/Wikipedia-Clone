@@ -1,0 +1,9 @@
+.background {
+    display: flex;
+    justify-content: center;
+
+    &__white {
+        width: 1600px;
+        background-color: rgb(var(--background-color));
+    }
+}
