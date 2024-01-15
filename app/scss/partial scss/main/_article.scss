@@ -1,22 +1,19 @@
 .article {
     width: 100%;
-    padding-top: 0px;
+    padding-top: 0;
 
     &__languages {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
 
         &--selector {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 140px;
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: 700;
-            padding: 2px 0px;
 
             img:first-child {
                 height: 22px;
@@ -24,12 +21,11 @@
         }
 
         &--selector:hover {
-            background-color: rgba(0, 0, 0, 0.15)
+            background-color: rgba(var(--hover-color), 0.15)
         }
 
         h1 {
-            font-weight: 300;
-            font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+            font-size: 2.5rem;
         }
 
         +hr {
@@ -42,7 +38,6 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        font-size: 14px;
         padding: 7px 0px;
 
         a:hover {
@@ -70,7 +65,7 @@
             }
 
             button:hover {
-                background-color: rgba(0, 0, 0, 0.15);
+                background-color: rgba(var(--hover-color), 0.15);
             }
         }
     }
@@ -80,15 +75,14 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        font-size: 14px;
-        margin-top: -2px;
+        margin: 12px 0px;
 
         &--link {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 170px;
-            font-size: 12px;
+            width: 190px;
+            font-size: 0.9em;
         }
     }
 
@@ -98,22 +92,17 @@
         align-items: center;
 
         h2 {
-            font-weight: 300;
-            font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
-            margin-right: 16px;
+            font-size: 1.6rem;
+            margin-right: 12px;
         }
 
         +hr {
             margin-top: -20px;
         }
-
-        &--notes {
-            margin-top: -12px;
-        }
     }
 
     &__notes {
-        font-size: 0.8rem;
+        font-size: 0.95rem;
 
         span {
             font-style: italic;

@@ -8,9 +8,9 @@
     display: grid;
     grid-template-columns: 1fr 270px;
     width: 100%;
+    font-size: 0.875rem;
 
     &--left {
-        font-size: 0.875rem;
         line-height: 1.6;
     }
 }

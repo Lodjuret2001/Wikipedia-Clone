@@ -1,7 +1,9 @@
+@forward '../colors';
+
 .relatedarticles {
 
     &__container {
-        border: 1px solid black;
+        border: 1px solid rgb(var(--border-color));
         padding: 3px;
     }
 
@@ -24,29 +26,23 @@
 
         &--show,
         &--vte {
-            font-size: 11px;
+            font-size: 0.8rem;
             margin: 0px 10px;
-            padding: 0px;
         }
 
         &--title {
-            font-size: 14px;
-            font-weight: 700;
-            margin: 0px;
-            padding: 0px;
+            font-weight: bold;
         }
     }
 
     &__categories {
         width: cover;
-        border: 1px solid black;
-        margin-top: 20px;
+        border: 1px solid rgb(var(--border-color));
         padding: 10px 5px;
-        margin-bottom: 10px;
+        margin: 20px 0px 10px 0px;
 
         a {
             padding: 4px;
-            font-size: 15px;
         }
     }
 }
