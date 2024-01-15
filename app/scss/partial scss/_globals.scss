@@ -1,16 +1,26 @@
 @forward 'colors';
 
+:root {
+    font-size: 14px;
+}
+
 body {
     font-family: sans-serif;
     background-color: rgb(var(--body-background));
     color: black;
     margin: 0;
-    font-size: 13px;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: rgb(var(--linkcolor));
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 a:hover {
@@ -29,12 +39,12 @@ main {
 }
 
 footer {
-    margin: 0px 50px;
-    margin-bottom: 90px;
+    margin: 0px 50px 90px 50px;
 }
 
 h1,
 h2,
 h3 {
     font-weight: 300;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
 }
